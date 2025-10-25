@@ -1,0 +1,16 @@
+Django==4.2.7
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+psycopg2-binary==2.9.9
+python-decouple==3.8
+cryptography==41.0.7
+django-cors-headers==4.3.1
+django-extensions==3.2.3
+celery==5.3.4
+redis==5.0.1
+Pillow==10.1.0
+faker==20.1.0
+django-ratelimit==4.1.0
+django-filter==23.4
+drf-spectacular==0.26.5
+bcrypt==4.1.2

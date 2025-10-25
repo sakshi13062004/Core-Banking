@@ -1,0 +1,133 @@
+INFO 2025-10-25 22:46:20,315 autoreload 25044 30452 Watching for file changes with StatReloader
+INFO 2025-10-25 22:49:53,494 basehttp 25044 28048 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-10-25 22:50:07,957 basehttp 25044 28048 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-10-25 22:51:50,225 basehttp 25044 8064 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-10-25 22:52:09,888 basehttp 25044 26940 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-10-25 22:57:16,870 autoreload 21688 16320 Watching for file changes with StatReloader
+WARNING 2025-10-25 23:00:17,402 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:00:17,404 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 73
+ERROR 2025-10-25 23:00:48,751 models 21688 32000 Failed to initialize encryption: Fernet key must be 32 url-safe base64-encoded bytes.
+ERROR 2025-10-25 23:00:49,230 models 21688 32000 Failed to initialize encryption: Fernet key must be 32 url-safe base64-encoded bytes.
+INFO 2025-10-25 23:00:49,261 views 21688 32000 New user registered: testuser
+INFO 2025-10-25 23:00:49,276 utils 21688 32000 Audit log created: LOG14204704413449
+INFO 2025-10-25 23:00:49,277 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 201 139
+WARNING 2025-10-25 23:05:09,506 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:05:09,506 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 84
+WARNING 2025-10-25 23:05:24,277 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:05:24,277 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 71
+WARNING 2025-10-25 23:05:34,868 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:05:34,869 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 58
+WARNING 2025-10-25 23:05:45,426 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:05:45,426 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 58
+WARNING 2025-10-25 23:05:52,849 log 21688 32000 Bad Request: /api/auth/register/
+WARNING 2025-10-25 23:05:52,851 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 400 58
+WARNING 2025-10-25 23:06:02,100 log 21688 32000 Forbidden: /api/auth/register/
+WARNING 2025-10-25 23:06:02,100 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 403 63
+WARNING 2025-10-25 23:06:12,812 log 21688 32000 Forbidden: /api/auth/register/
+WARNING 2025-10-25 23:06:12,813 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 403 63
+WARNING 2025-10-25 23:06:20,662 log 21688 32000 Forbidden: /api/auth/register/
+WARNING 2025-10-25 23:06:20,663 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 403 63
+ERROR 2025-10-25 23:06:40,640 log 21688 32000 Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "demo_app_user_phone_number_key"
+DETAIL:  Key (phone_number)=(+1234567890) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\Sakshi kumari\Documents\banking-crud\core_banking\demo_app\views.py", line 88, in post
+    response = super().post(request, *args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\rest_framework\serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "C:\Users\Sakshi kumari\Documents\banking-crud\core_banking\demo_app\serializers.py", line 94, in create
+    user = User.objects.create_user(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\models.py", line 161, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\models.py", line 155, in _create_user
+    user.save(using=self._db)
+  File "C:\Users\Sakshi kumari\Documents\banking-crud\core_banking\demo_app\models.py", line 164, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\base_user.py", line 76, in save
+    super().save(*args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1020, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\base.py", line 1061, in _do_insert
+    return manager._insert(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1805, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Sakshi kumari\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "demo_app_user_phone_number_key"
+DETAIL:  Key (phone_number)=(+1234567890) already exists.
+
+ERROR 2025-10-25 23:06:40,651 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 500 243248
+INFO 2025-10-25 23:07:14,853 views 21688 32000 New user registered: saks
+INFO 2025-10-25 23:07:14,861 utils 21688 32000 Audit log created: LOGAC478F11413834
+INFO 2025-10-25 23:07:14,861 basehttp 21688 32000 "POST /api/auth/register/ HTTP/1.1" 201 135
+INFO 2025-10-25 23:08:25,175 utils 21688 32000 Audit log created: LOG5F7CBF84413905
+INFO 2025-10-25 23:08:25,176 basehttp 21688 32000 "POST /api/auth/login/ HTTP/1.1" 200 795
+WARNING 2025-10-25 23:10:16,775 log 21688 32000 Not Found: /api/auth/profile/
+WARNING 2025-10-25 23:10:16,776 basehttp 21688 32000 "GET /api/auth/profile/ HTTP/1.1" 404 10922
+INFO 2025-10-25 23:10:39,073 basehttp 21688 32000 "GET /api/profile/ HTTP/1.1" 200 469
+INFO 2025-10-25 23:11:21,734 basehttp 21688 32000 "GET /api/accounts/ HTTP/1.1" 200 52
+WARNING 2025-10-25 23:11:26,547 log 21688 32000 Bad Request: /api/accounts/
+WARNING 2025-10-25 23:11:26,548 basehttp 21688 32000 "POST /api/accounts/ HTTP/1.1" 400 44
+INFO 2025-10-25 23:11:44,583 basehttp 21688 26820 "GET /api/docs/swagger/ HTTP/1.1" 200 4458
+INFO 2025-10-25 23:11:45,119 basehttp 21688 26820 "GET /api/schema/ HTTP/1.1" 200 84366
+INFO 2025-10-25 23:12:21,618 utils 21688 32000 Audit log created: LOGA756C8BA414141
+INFO 2025-10-25 23:12:21,618 basehttp 21688 32000 "POST /api/accounts/ HTTP/1.1" 201 898
+INFO 2025-10-25 23:12:39,235 utils 21688 32000 Audit log created: LOGBA1E7CC1414159
+INFO 2025-10-25 23:12:39,236 basehttp 21688 32000 "POST /api/accounts/ HTTP/1.1" 201 900
+WARNING 2025-10-25 23:14:03,455 log 21688 32000 Bad Request: /api/transactions/
+WARNING 2025-10-25 23:14:03,456 basehttp 21688 32000 "POST /api/transactions/ HTTP/1.1" 400 66
+WARNING 2025-10-25 23:14:24,198 log 21688 32000 Bad Request: /api/transactions/
+WARNING 2025-10-25 23:14:24,198 basehttp 21688 32000 "POST /api/transactions/ HTTP/1.1" 400 56
+WARNING 2025-10-25 23:14:42,458 log 21688 32000 Bad Request: /api/transactions/
+WARNING 2025-10-25 23:14:42,458 basehttp 21688 32000 "POST /api/transactions/ HTTP/1.1" 400 56
